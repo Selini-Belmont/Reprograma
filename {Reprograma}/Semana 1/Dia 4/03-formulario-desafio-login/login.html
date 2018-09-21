@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<title>{Reprograma} - Login</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+</head>
+
+<body>
+
+	<div class="login-page">
+		<div class="form">
+			<form class="login-form" method="post">
+				<input type="text" id="user" placeholder="username" />
+				<input type="password" id="pass" placeholder="password" />
+				<p id="texto"></p>
+				<button id="btn">login</button>
+			</form>
+		</div>
+	</div>
+
+</body>
+
+<script>
+	var botaoLogin = document.querySelector("#btn");
+	botaoLogin.addEventListener('click',function(event){
+		event.preventDefault();
+		var login = document.querySelector("#user").value;
+		var senha = document.querySelector("#pass").value;
+
+		if (login == "admin" && senha == "admin"){
+			document.querySelector("#texto").style.color= "green";
+			document.querySelector("#texto").textContent = "ACERTOU";
+
+		} else {
+			document.querySelector("#texto").style.color= "red";
+			document.querySelector("#texto").textContent = "ERROU";
+		}
+
+	});
+
+</script>
+
+</html>

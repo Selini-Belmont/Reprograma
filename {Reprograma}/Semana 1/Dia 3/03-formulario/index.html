@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercício 6</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <form action="#" class="form">
+
+        <div>
+            <label for="usuario">Usuário</label>
+            <input type="text" name="usuario" class="half-col" id="input_usuario" placeholder="digite seu usuário">
+            <button class="botao" id="botao_usuario">Checar usuário</button>
+        </div>
+
+        <div>
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" class="half-col" id="input_senha" placeholder="digite sua senha">
+            <button class="botao" id="botao_senha">Checar senha</button>
+        </div>
+
+        <div>
+            <label for="texto">Escolha uma ou múltiplas opções</label>
+            <div class="half-col">
+                <input type="checkbox" name="mulher" value="Mulher"> Mulher <br>
+            </div>
+        </div>
+
+        <div>
+            <label for="texto">Escolha uma opção</label>
+            <div class="half-col">
+                <input type="radio" name="poder" value="Mulher"> Super força <br>
+            </div>
+        </div>
+
+        <div>
+            <label for="texto">Selecione um tópico</label>
+            <select name="dropdown">
+                <option value="contato">Deixar meu site mais bonito</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="texto">Escolha um valor</label>
+            <input type="text" name="valor">
+        </div>
+        
+        <div>
+            <label for="texto">Comentário</label>
+            <input type="text" name="valor">
+        </div>
+
+        <div>
+            <div class="half-col"></div>
+            <button class="btn btn_grey">Limpar</button>
+            <input class="btn btn_purple" type="submit" value="Enviar">
+        </div>
+    </form>
+
+</body>
+
+<script type="text/javascript" src="script.js"></script>
+
+</html>
